@@ -25,6 +25,7 @@
             <div class="loader-bar">
                 <div class="loader-progress"></div>
             </div>
+            <p class="loader-subtext">Kahve çekirdekleri özenle kavruluyor...</p>
         </div>
     </div>
 
@@ -58,6 +59,70 @@
                     <h3>Klasik Filtre Kahve</h3>
                     <p>Özenle seçilmiş çekirdeklerden, sanatsal bir dokunuşla hazırlandı.</p>
                     <span class="price">85 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/espresso.png" alt="Espresso"></div>
+                <div class="card-info">
+                    <h3>Double Espresso</h3>
+                    <p>Yoğun ve saf İtalyan kahve deneyimi, zengin crema ile.</p>
+                    <span class="price">75 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/americano.png" alt="Americano"></div>
+                <div class="card-info">
+                    <h3>Sıcak Americano</h3>
+                    <p>Double espresso üzerine sıcak su eklenerek hazırlanan sert lezzet.</p>
+                    <span class="price">85 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/cappuccino.png" alt="Cappuccino"></div>
+                <div class="card-info">
+                    <h3>Klasik Cappuccino</h3>
+                    <p>Bol köpüklü, kakao tozlu yumuşak içimli İtalyan klasiği.</p>
+                    <span class="price">105 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/mocha.png" alt="Cafe Mocha"></div>
+                <div class="card-info">
+                    <h3>Sıcak Cafe Mocha</h3>
+                    <p>Espresso, sıcak çikolata ve kremanın tatlı buluşması.</p>
+                    <span class="price">120 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/flat_white.png" alt="Flat White"></div>
+                <div class="card-info">
+                    <h3>Flat White</h3>
+                    <p>İnce dokulu mikro köpükle hazırlanan Avustralya klasiği.</p>
+                    <span class="price">110 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/v60.png" alt="V60 Pour Over"></div>
+                <div class="card-info">
+                    <h3>V60 Pour Over</h3>
+                    <p>Özel çekirdeklerle elde demlenmiş 3. nesil berrak kahve.</p>
+                    <span class="price">130 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/matcha.png" alt="Matcha Latte"></div>
+                <div class="card-info">
+                    <h3>Japon Matcha Latte</h3>
+                    <p>Premium Japon yeşil çayı ve ipeksi sütün sağlıklı uyumu.</p>
+                    <span class="price">140 ₺</span>
+                </div>
+            </div>
+            <div class="menu-card" data-aos="zoom-in">
+                <div class="card-image"><img src="fotograflar/affogato.png" alt="Affogato"></div>
+                <div class="card-info">
+                    <h3>Affogato</h3>
+                    <p>Vanilyalı dondurma üzerine sıcak espresso dökülerek servis edilir.</p>
+                    <span class="price">150 ₺</span>
                 </div>
             </div>
             <div class="menu-card" data-aos="zoom-in">
@@ -215,6 +280,10 @@
 
     <!-- BASİT FOOTER (Üstteki bölümle bütünleşik) -->
     <footer class="simple-footer">
+        <div class="developer-credit-masculine">
+            <span class="dev-label">Geliştirici:</span>
+            <a href="https://github.com/umutmtal319-pixel" target="_blank" class="dev-name">Umut Özçelik</a>
+        </div>
         <div class="social-icons">
             <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -227,31 +296,26 @@
             </a>
         </div>
         <p>&copy; 2026 Sanat Kafe & Restoran. Tüm Hakları Saklıdır.</p>
-        <p class="developer-credit" style="font-size: 0.85rem; margin-top: 10px; opacity: 0.8; font-weight: 500;">
-            Designed & Developed by <a href="https://github.com/umutmtal319-pixel" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Umut Özçelik</a>
-        </p>
     </footer>
 
     <!-- AOS JS & Init -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // window.addEventListener('load', ...) -> Sayfanın yüklenmesi tamamen bitince içindeki kodları (fonksiyonu) çalıştırır.
         window.addEventListener('load', () => {
-            
-            // setTimeout(..., 1000) -> İçine yazılan kodların 1 saniye (1000 milisaniye) beklemesini sağlar.
+            const facts = [
+                "Kahve çekirdekleri aslında bir meyvenin çekirdeğidir.",
+                "Dünyada her gün 2.25 milyar fincan kahve tüketilmektedir.",
+                "Espresso İtalyancada 'baskı altında yapılan' anlamına gelir.",
+                "Kahveyi ilk keşfedenlerin Etiyopyalı keçiler olduğu söylenir.",
+                "Kahve, petrolden sonra dünyada en çok ticareti yapılan ikinci üründür."
+            ];
+            const factEl = document.querySelector('.loader-subtext');
+            if(factEl) factEl.textContent = facts[Math.floor(Math.random() * facts.length)];
+
             setTimeout(() => {
-                
-                // document.getElementById -> 'splash-screen' ID'li HTML öğesini (açılıştaki kahve animasyonunu) bulur.
-                // classList.add('hidden') -> Bu öğeye 'hidden' (gizli) CSS class'ını ekler. Bu sayede ekran görünmez olur ve site açılır.
                 document.getElementById('splash-screen').classList.add('hidden');
-                
-                // AOS.init -> Animasyon kütüphanesini (Aşağı kaydırdıkça beliren öğeler) başlatır.
-                // duration: 800 -> Animasyonların 800 milisaniye (0.8 saniye) süreceğini belirtir.
-                // once: true -> Animasyonların sayfada aşağı inip çıkarken sadece bir kere oynamasını sağlar.
-                // offset: 100 -> Öğeler ekranda 100 piksel göründüğünde animasyonun başlamasını tetikler.
                 AOS.init({ duration: 800, once: true, offset: 100 });
-                
-            }, 1000); // 1 saniye bekle
+            }, 3500); 
         });
     </script>
 
