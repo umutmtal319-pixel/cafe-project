@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Kafe & Restoran - Galeri</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen">
+        <div class="loader-content">
+            <div class="coffee-cup-container">
+                <div class="steam steam-1"></div>
+                <div class="steam steam-2"></div>
+                <div class="steam steam-3"></div>
+                <div class="coffee-cup"></div>
+            </div>
+            <h2 class="loader-text">Sanat Kafe</h2>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Sanat Kafe</div>
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="menu.html">Menü</a></li>
+            <li><a href="galeri.html" class="active">Galeri</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- SANAT GALERİSİ BÖLÜMÜ -->
+    <section id="gallery" class="gallery-section" style="min-height: calc(100vh - 150px);">
+        <div class="section-title">
+            <h2>Sanat Galerimiz</h2>
+            <p>Duvarlarımızı süsleyen yerel sanatçı eserleri</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item large" data-aos="fade-up">
+                <img src="fotograflar/galeri1.png" alt="Karakalem kahve fincanı çizimi - yerel sanatçı eseri">
+                <div class="gallery-overlay">
+                    <p>Karakalem Kahve Fincanı</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="fotograflar/galeri2.png" alt="Suluboya kafe köşesi tablosu - yerel sanatçı">
+                <div class="gallery-overlay">
+                    <p>Suluboya Kafe Köşesi</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="fotograflar/galeri3.png" alt="Yağlı boya meyve natürmort - tablo">
+                <div class="gallery-overlay">
+                    <p>Yağlı Boya Natürmort</p>
+                </div>
+            </div>
+
+            <div class="gallery-item tall" data-aos="fade-up">
+                <img src="fotograflar/galeri4.png" alt="Pastel boyayla yapılmış soyut şehir manzarası">
+                <div class="gallery-overlay">
+                    <p>Pastel Şehir Manzarası</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="fotograflar/galeri5.png" alt="Karakalem el ve bardak çalışması">
+                <div class="gallery-overlay">
+                    <p>Karakalem El Çizimi</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="fotograflar/galeri6.png" alt="Suluboya kahve lekesi doku çalışması">
+                <div class="gallery-overlay">
+                    <p>Suluboya Kahve Dokusu</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BASİT FOOTER (Üstteki bölümle bütünleşik) -->
+    <footer class="simple-footer">
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+        </div>
+        <p>&copy; 2026 Sanat Kafe & Restoran. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- AOS JS & Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // window.addEventListener('load', ...) -> Sayfanın yüklenmesi tamamen bitince içindeki kodları (fonksiyonu) çalıştırır.
+        window.addEventListener('load', () => {
+            
+            // setTimeout(..., 1000) -> İçine yazılan kodların 1 saniye (1000 milisaniye) beklemesini sağlar.
+            setTimeout(() => {
+                
+                // document.getElementById -> 'splash-screen' ID'li HTML öğesini (açılıştaki kahve animasyonunu) bulur.
+                // classList.add('hidden') -> Bu öğeye 'hidden' (gizli) CSS class'ını ekler. Bu sayede ekran görünmez olur ve site açılır.
+                document.getElementById('splash-screen').classList.add('hidden');
+                
+                // AOS.init -> Animasyon kütüphanesini (Aşağı kaydırdıkça beliren öğeler) başlatır.
+                // duration: 800 -> Animasyonların 800 milisaniye (0.8 saniye) süreceğini belirtir.
+                // once: true -> Animasyonların sayfada aşağı inip çıkarken sadece bir kere oynamasını sağlar.
+                // offset: 100 -> Öğeler ekranda 100 piksel göründüğünde animasyonun başlamasını tetikler.
+                AOS.init({ duration: 800, once: true, offset: 100 });
+                
+            }, 1000); // 1 saniye bekle
+        });
+    </script>
+
+    <!-- HAMBURGER MENÜ AÇMA/KAPAMA SCRIPTI -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

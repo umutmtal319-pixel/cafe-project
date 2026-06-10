@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Kafe & Restoran - Ana Sayfa</title>
+    <!-- CSS dosyasını dahil ediyoruz -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen">
+        <div class="loader-content">
+            <div class="coffee-cup-container">
+                <div class="steam steam-1"></div>
+                <div class="steam steam-2"></div>
+                <div class="steam steam-3"></div>
+                <div class="coffee-cup"></div>
+            </div>
+            <h2 class="loader-text">Sanat Kafe</h2>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR (Menü Çubuğu) -->
+    <nav class="navbar">
+        <div class="logo">Sanat Kafe</div>
+        <!-- HAMBURGER BUTONU: Sadece telefonda görünür, tıklanınca menüyü açar/kapar -->
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+            <span></span> <!-- Üst çizgi -->
+            <span></span> <!-- Orta çizgi -->
+            <span></span> <!-- Alt çizgi -->
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="menu.html">Menü</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION (Ana Karşılama Ekranı) -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="800">
+            <h1>Sanatın Kahveyle Buluştuğu Yer</h1>
+            <p>Eşsiz lezzetler, samimi bir atmosfer ve sanat dolu anlar...</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn">Menüyü Keşfet</a>
+                <a href="iletisim.html" class="btn btn-outline">Bize Ulaşın</a>
+            </div>
+        </div>
+        <!-- SCROLL GÖSTERGESİ: Kullanıcıya aşağı kaydırması gerektiğini belirtir -->
+        <a href="#services" class="scroll-indicator" aria-label="Aşağı kaydır">
+            <span class="scroll-text">Keşfet</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <!-- HİZMETLERİMİZ BÖLÜMÜ -->
+    <section id="services" class="services-section">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Neler Sunuyoruz?</h2>
+            <p>Sadece lezzet değil, tam bir deneyim</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon">☕</div>
+                <h3>Taze Çekirdekler</h3>
+                <p>Dünyanın dört bir yanından gelen en iyi kahve çekirdeklerini günlük kavuruyoruz.</p>
+            </div>
+            <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon">🎨</div>
+                <h3>Sanat Etkinlikleri</h3>
+                <p>Haftalık sergiler ve canlı boyama atölyeleriyle ruhunuzu besleyin.</p>
+            </div>
+            <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon">📶</div>
+                <h3>Ücretsiz Hızlı Wi-Fi</h3>
+                <p>Çalışmak veya ders çalışmak isteyen misafirlerimiz için kesintisiz internet.</p>
+            </div>
+            <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon">🌿</div>
+                <h3>Vegan Seçenekler</h3>
+                <p>Her beslenme tarzına uygun, özel olarak hazırlanan lezzetli menüler.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SSS (SIKÇA SORULAN SORULAR) BÖLÜMÜ -->
+    <section id="faq" class="faq-section">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <p>Merak ettikleriniz için buradayız</p>
+        </div>
+
+        <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Soru 1 -->
+            <details class="faq-item">
+                <summary class="faq-question">Rezervasyon yapabilir miyim?</summary>
+                <p class="faq-answer">Evet! Telefonumuzdan, e-posta adresimizden veya sosyal medya hesaplarımızdan bize
+                    ulaşarak 4 kişi ve üzeri gruplar için masa rezervasyonu yaptırabilirsiniz. En az 24 saat öncesinden
+                    bildirim yapmanızı öneririz.</p>
+            </details>
+
+            <!-- Soru 2 -->
+            <details class="faq-item">
+                <summary class="faq-question">Sanat etkinliklerine nasıl katılabilirim?</summary>
+                <p class="faq-answer">Her cumartesi saat 14:00-17:00 arasında ücretsiz suluboya atölyemiz, her pazar
+                    saat 11:00-13:00 arasında ise karakalem çizim derslerimiz düzenlenmektedir. Malzemeler tarafımızca
+                    karşılanır, sadece gelmeniz yeterlidir!</p>
+            </details>
+
+            <!-- Soru 3 -->
+            <details class="faq-item">
+                <summary class="faq-question">Wi-Fi şifresi nedir?</summary>
+                <p class="faq-answer">Ücretsiz Wi-Fi hizmetimizden yararlanmak için kasiyerimizden günlük şifreyi
+                    alabilirsiniz. Şifre her gün saat 08:00'de değiştirilmektedir. İnternet hızımız 100 Mbps'dir.</p>
+            </details>
+
+            <!-- Soru 4 -->
+            <details class="faq-item">
+                <summary class="faq-question">Vegan veya glutensiz seçenekler var mı?</summary>
+                <p class="faq-answer">Evet, menümüzün yaklaşık %30'u tamamen vegan ve %20'si glutensiz seçeneklerden
+                    oluşmaktadır. Alerjenler hakkında daha fazla bilgi almak için garsonlarımızdan yardım
+                    isteyebilirsiniz.</p>
+            </details>
+
+            <!-- Soru 5 -->
+            <details class="faq-item">
+                <summary class="faq-question">Galerideki tablolar satışa sunuluyor mu?</summary>
+                <p class="faq-answer">Duvarlarımızdaki eserlerin büyük çoğunluğu yerel sanatçılarımıza aittir ve satışa
+                    sunulmaktadır. İlgilendiğiniz bir eser varsa personelimize danışarak sanatçıyla iletişime geçmenizi
+                    sağlayabiliriz.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- BASİT FOOTER (Üstteki bölümle bütünleşik) -->
+    <footer class="simple-footer">
+        <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+        </div>
+        <p>&copy; 2026 Sanat Kafe & Restoran. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- AOS JS & Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // window.addEventListener('load', ...) -> Sayfanın yüklenmesi tamamen bitince içindeki kodları (fonksiyonu) çalıştırır.
+        window.addEventListener('load', () => {
+            
+            // setTimeout(..., 1000) -> İçine yazılan kodların 1 saniye (1000 milisaniye) beklemesini sağlar.
+            setTimeout(() => {
+                
+                // document.getElementById -> 'splash-screen' ID'li HTML öğesini (açılıştaki kahve animasyonunu) bulur.
+                // classList.add('hidden') -> Bu öğeye 'hidden' (gizli) CSS class'ını ekler. Bu sayede ekran görünmez olur ve site açılır.
+                document.getElementById('splash-screen').classList.add('hidden');
+                
+                // AOS.init -> Animasyon kütüphanesini (Aşağı kaydırdıkça beliren öğeler) başlatır.
+                // duration: 800 -> Animasyonların 800 milisaniye (0.8 saniye) süreceğini belirtir.
+                // once: true -> Animasyonların sayfada aşağı inip çıkarken sadece bir kere oynamasını sağlar.
+                // offset: 100 -> Öğeler ekranda 100 piksel göründüğünde animasyonun başlamasını tetikler.
+                AOS.init({ duration: 800, once: true, offset: 100 });
+                
+            }, 1000); // 1 saniye bekle
+        });
+
+    </script>
+
+    <!-- HAMBURGER MENÜ AÇMA/KAPAMA SCRIPTI -->
+    <script>
+        // document.querySelector -> Sayfadaki ilk '.hamburger' class'lı öğeyi (butonu) bulur ve 'hamburger' değişkenine atar.
+        const hamburger = document.querySelector('.hamburger');
+        // document.querySelector -> Sayfadaki ilk '.nav-links' class'lı öğeyi (menü listesini) bulur ve 'navLinks' değişkenine atar.
+        const navLinks = document.querySelector('.nav-links');
+
+        // hamburger.addEventListener('click', ...) -> Hamburger butonuna tıklandığında içindeki fonksiyonu çalıştırır.
+        hamburger.addEventListener('click', () => {
+            // classList.toggle('active') -> Öğede 'active' class'ı varsa kaldırır, yoksa ekler.
+            // Bu sayede her tıklamada menü açılır/kapanır (aç-kapa düğmesi gibi).
+            hamburger.classList.toggle('active');  // Butonun X şekline dönmesini sağlar
+            navLinks.classList.toggle('active');    // Menü listesinin görünür olmasını sağlar
+        });
+
+        // Bir menü linkine tıklanınca menüyü otomatik kapat
+        // querySelectorAll -> Tüm '.nav-links a' öğelerini (linkleri) bulur.
+        // forEach -> Her bir link için aynı işlemi tekrarlar.
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');  // Buton normal haline döner
+                navLinks.classList.remove('active');    // Menü kapanır
+            });
+        });
+    </script>
+
+</body>
+
+</html>
