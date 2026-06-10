@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanat Kafe & Restoran - Galeri</title>
+    <title>Sanat Kafe & Restoran - Kahve Rehberi</title>
     <link rel="stylesheet" href="style.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,72 +39,96 @@
             <li><a href="index.html">Ana Sayfa</a></li>
             <li><a href="hakkimizda.html">Hakkımızda</a></li>
             <li><a href="menu.html">Menü</a></li>
-            <li><a href="galeri.html" class="active">Galeri</a></li>
+            <li><a href="kahve-rehberi.html" class="active">Kahve Rehberi</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
 
-    <!-- SANAT GALERİSİ BÖLÜMÜ -->
-    <section id="gallery" class="gallery-section" style="min-height: calc(100vh - 150px);">
+    <!-- KAHVE REHBERİ BÖLÜMÜ -->
+    <section id="coffee-guide" class="coffee-guide-section" style="min-height: calc(100vh - 150px);">
         <div class="section-title">
-            <h2>Sanat Galerimiz</h2>
-            <p>Duvarlarımızı süsleyen yerel sanatçı eserleri</p>
+            <h2>Kahve Rehberi</h2>
+            <p>Çekirdekten fincana uzanan bu eşsiz yolculuğu keşfedin</p>
         </div>
 
-        <div class="gallery-grid">
-
-            <div class="gallery-item large" data-aos="fade-up">
-                <img src="fotograflar/galeri1.png" alt="Karakalem kahve fincanı çizimi - yerel sanatçı eseri">
-                <div class="gallery-overlay">
-                    <p>Karakalem Kahve Fincanı</p>
+        <div class="guide-container">
+            <!-- V60 Card -->
+            <div class="guide-card" data-aos="fade-up">
+                <div class="guide-image">
+                    <img src="fotograflar/kahve.png" alt="V60 Demleme">
+                    <div class="guide-badge">Pour Over</div>
+                </div>
+                <div class="guide-content">
+                    <h3>Hario V60</h3>
+                    <p>Japonya'dan dünyaya yayılan efsanevi V60, 60 derecelik konik yapısı sayesinde suyun çekirdekle mükemmel bir ahenk içinde buluşmasını sağlar. Meyvemsi ve çiçeksi notaları en net şekilde alabileceğiniz bu demleme yöntemi, filtre kahvede temiz ve berrak bir kupa arayanların ilk tercihidir.</p>
+                    <ul class="guide-details">
+                        <li><span>Öğütme</span> Orta - İnce</li>
+                        <li><span>Sıcaklık</span> 92°C - 94°C</li>
+                        <li><span>Süre</span> 2.5 - 3 dk</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="gallery-item" data-aos="fade-up">
-                <img src="fotograflar/galeri2.png" alt="Suluboya kafe köşesi tablosu - yerel sanatçı">
-                <div class="gallery-overlay">
-                    <p>Suluboya Kafe Köşesi</p>
+            <!-- Chemex Card -->
+            <div class="guide-card reverse" data-aos="fade-up" data-aos-delay="100">
+                <div class="guide-image">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80" alt="Chemex Demleme">
+                    <div class="guide-badge">Slow Brew</div>
+                </div>
+                <div class="guide-content">
+                    <h3>Chemex</h3>
+                    <p>Zarif kum saati tasarımıyla Chemex, kahve yapımını estetik bir ritüele dönüştürür. Normal filtrelere göre %20 daha kalın olan özel kağıdı sayesinde kahvedeki acı yağları hapseder. Sonuç: Çaya benzeyen, gövdesiz ama inanılmaz aromatik, pürüzsüz bir içim deneyimi.</p>
+                    <ul class="guide-details">
+                        <li><span>Öğütme</span> Orta - Kalın</li>
+                        <li><span>Sıcaklık</span> 93°C - 95°C</li>
+                        <li><span>Süre</span> 3.5 - 4 dk</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="gallery-item" data-aos="fade-up">
-                <img src="fotograflar/galeri3.png" alt="Yağlı boya meyve natürmort - tablo">
-                <div class="gallery-overlay">
-                    <p>Yağlı Boya Natürmort</p>
+            <!-- Espresso Card -->
+            <div class="guide-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="guide-image">
+                    <img src="fotograflar/macchiato.png" alt="Espresso">
+                    <div class="guide-badge">Classic</div>
+                </div>
+                <div class="guide-content">
+                    <h3>Espresso</h3>
+                    <p>Kahvenin en saf, en konsantre ve en güçlü hali. Yaklaşık 9 bar basınçlı suyun, incecik öğütülmüş kahveden sadece 25 saniye içinde geçmesiyle elde edilir. Üzerindeki o altın rengi kalın 'crema', taze çekirdeğimizin ve usta baristalarımızın bir imzasıdır.</p>
+                    <ul class="guide-details">
+                        <li><span>Öğütme</span> İnce (Fine)</li>
+                        <li><span>Sıcaklık</span> 90°C - 93°C</li>
+                        <li><span>Süre</span> 25 - 30 sn</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="gallery-item tall" data-aos="fade-up">
-                <img src="fotograflar/galeri4.png" alt="Pastel boyayla yapılmış soyut şehir manzarası">
-                <div class="gallery-overlay">
-                    <p>Pastel Şehir Manzarası</p>
+            <!-- French Press Card -->
+            <div class="guide-card reverse" data-aos="fade-up" data-aos-delay="300">
+                <div class="guide-image">
+                    <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?auto=format&fit=crop&w=800&q=80" alt="French Press">
+                    <div class="guide-badge">Immersion</div>
+                </div>
+                <div class="guide-content">
+                    <h3>French Press</h3>
+                    <p>Kahvenin suyun içinde demlenmeye bırakıldığı, süzüldükten sonra tüm yağlarının ve gövdesinin fincana geçtiği klasik yöntem. Filtre kağıdı kullanılmadığı için kahvenin doğal dokusu korunur, daha gövdeli, yoğun ve doyurucu bir tat profili sunar.</p>
+                    <ul class="guide-details">
+                        <li><span>Öğütme</span> Kalın (Coarse)</li>
+                        <li><span>Sıcaklık</span> 95°C</li>
+                        <li><span>Süre</span> 4 dk</li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="gallery-item" data-aos="fade-up">
-                <img src="fotograflar/galeri5.png" alt="Karakalem el ve bardak çalışması">
-                <div class="gallery-overlay">
-                    <p>Karakalem El Çizimi</p>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-up">
-                <img src="fotograflar/galeri6.png" alt="Suluboya kahve lekesi doku çalışması">
-                <div class="gallery-overlay">
-                    <p>Suluboya Kahve Dokusu</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <!-- BASİT FOOTER (Üstteki bölümle bütünleşik) -->
     <footer class="simple-footer">
         <div class="social-icons">
-            <a href="#" class="social-icon" aria-label="Instagram">
+            <a href="https://instagram.com/umutt_ozc" class="social-icon" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
-            <a href="#" class="social-icon" aria-label="Facebook">
+            <a href="https://facebook.com/umutt_ozc" class="social-icon" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
             <a href="#" class="social-icon" aria-label="Twitter">
